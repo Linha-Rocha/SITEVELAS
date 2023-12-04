@@ -10,6 +10,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto; /* Centraliza verticalmente */
+    width: 350px;
+    height: 350px;
 }
 #titulo, #subtitulo {
     text-align: center;
@@ -38,4 +40,18 @@ img{
 }
 .col-sm{
     text-align: justify;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+.carousel-inner .row {
+    width: 90%;
+    margin: 0 auto;
+}
+.carousel-img {
+    max-height: 300px; /* Ajuste a altura conforme necessário */
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
