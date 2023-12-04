@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.menu{
+    background-color: aliceblue;
+    text-align: center;
+}
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centraliza verticalmente */
+}
+#titulo, #subtitulo {
+    text-align: center;
+    text-shadow: 0px 2px 3px burlywood;
+    }
+#final{
+    background-color: rgb(241, 246, 247);
+    padding: 30px;
+    margin: auto;
+    
+
+}
+img{
+    width: inherit;
+    min-width: 150px;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    ont-size: 0.8em;
+    
+}
+.container{
+    text-color:rgb(85, 85, 85);
+    text-align: justify;
+}
+.col-sm{
+    text-align: justify;
+}
