@@ -12,6 +12,9 @@ body {
     margin-right: auto; /* Centraliza verticalmente */
     width: 350px;
     height: 350px;
+    object-fit: cover; /* Se necessário, cobre o espaço designado sem distorcer */
+    
+   
 }
 #titulo, #subtitulo {
     text-align: center;
@@ -21,8 +24,51 @@ body {
     background-color: rgb(241, 246, 247);
     padding: 30px;
     margin: auto;
-    
-
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+}
+.product-card {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento para destacar os cartões */
+    border-radius: 4px; /* Bordas arredondadas para os cartões */
+    overflow: hidden; 
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.product-name {
+    color: #333;
+    font-size: 14px;
+    margin-top: 8px;
+    margin: 5px 10px;
+    text-align: center;
+}
+.product-price {
+    color: #666;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin: 5px 10px;
+    text-align: center;
+}
+.product-sale-price {
+    color: #E44D26;
+    font-size: 16px;
+    margin: 5px 10px;
+    text-align: center;
+    font-weight: bold;
 }
 img{
     width: inherit;
@@ -31,16 +77,16 @@ img{
 .footer{
     text-align: center;
     padding: 20px;
-    ont-size: 0.8em;
-    
+    font-size: 0.8em;
 }
+
 .container{
     text-color:rgb(85, 85, 85);
     text-align: justify;
 }
 .col-sm{
-    text-align: justify;
-}
+    text-align: center;
+   }
 .carousel-control-prev, .carousel-control-next {
     width: 5%;
 }
@@ -50,8 +96,40 @@ img{
 }
 .carousel-img {
     max-height: 300px; /* Ajuste a altura conforme necessário */
-    width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 200px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Isso garante que a imagem cubra a área designada sem distorcer */
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7979;   
+    box-shadow: 0px 2px 4px rgb(134, 133, 133);
+  }
+  
+  .maisvendidos {
+    text-align: center; /* Centraliza o texto na div */
+    position: relative; /* Permite posicionamento absoluto dos pseudo-elementos */
+  }
+  .mb-3 {
+    text-align: center; /* Centraliza o texto */
+}
+
+.form-control {
+    display: block; /* Os elementos são exibidos como bloco */
+    margin-left: auto; /* Margem automática à esquerda */
+    margin-right: auto; /* Margem automática à direita */
+    width: 50%; /* Define a largura das caixas de texto para 50% da largura do contêiner */
+}
+
+.btn {
+    display: block; /* O botão é exibido como bloco */
+    margin: 20px auto; /* Margem automática em cima e embaixo e centraliza horizontalmente */
+}
+
+#subtitulo {
+    margin-top: 20px; /* Espaçamento acima do subtítulo */
 }
